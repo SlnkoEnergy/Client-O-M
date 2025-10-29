@@ -37,9 +37,7 @@ export const getAllCategories = async () => {
 
 export const CreateComplaint = async (formData: FormData) => {
     try {
-        for (let [key, value] of formData.entries()) {
-            console.log(key, value);
-        }
+
 
         const res = await Axios.post("/create-complaint", formData, {
             headers: {
