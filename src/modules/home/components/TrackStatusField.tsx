@@ -192,12 +192,12 @@ export default function TrackStatusField() {
               <div className="flex flex-col gap-4 sm:gap-6">
                 <div className="grid gap-2">
                   <Label htmlFor="ticket" className="text-sm sm:text-base">
-                    Ticket/Phone
+                    TicketNo./Phone
                   </Label>
                   <Input
                     id="ticket"
                     type="text"
-                    placeholder="e.g., T-RJ-002 or 8107158958"
+                    placeholder="e.g., TXX000 or 999999999"
                     value={ticketNo}
                     onChange={(e) => setTicketNo(e.target.value)}
                     required
