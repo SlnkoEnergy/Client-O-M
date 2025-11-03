@@ -127,7 +127,12 @@ export default function ComplaintFormPage() {
     // Detect recorder support
     useEffect(() => {
         try {
-            const supported = !!(navigator.mediaDevices?.getUserMedia && (window as any).MediaRecorder);
+            const supported =
+                typeof navigator !== "undefined" &&
+                !!navigator.mediaDevices &&
+                typeof navigator.mediaDevices.getUserMedia === "function" &&
+                typeof (window as any).MediaRecorder === "function";
+
             setRecorderReady(supported);
         } catch {
             setRecorderReady(false);

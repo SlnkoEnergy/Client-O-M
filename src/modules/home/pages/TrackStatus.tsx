@@ -5,7 +5,7 @@ import TrackStatusField from "../components/TrackStatusField";
 export default function TrackStatus() {
   return (
     <div className=" bg-white">
-      <SubHeader title="Check Status" isBackEnabled={false} />
+      <SubHeader title="Check Status" />
       <div>
         <TrackStatusField />
       </div>

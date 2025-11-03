@@ -26,8 +26,6 @@ FROM nginx:alpine
 # Copy built files to NGINX directory
 COPY --from=build /Client-O-M/dist /usr/share/nginx/html
 
-# Copy custom nginx config
-COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
 
