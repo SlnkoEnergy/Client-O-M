@@ -811,8 +811,7 @@ export default function ComplaintFormPage() {
                             Complaint registered successfully
                         </DialogTitle>
                         <DialogDescription>
-                            Your request has been recorded. Our team will get back to you soon.
-                        </DialogDescription>
+                            Thanks for reaching out—your complaint has been logged. We’ll get back to you soon. Track its status anytime with your phone number or Ticket ID.                        </DialogDescription>
                     </DialogHeader>
 
                     <div className="mt-2 rounded-lg border bg-white p-3">
