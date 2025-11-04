@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 export default function Dashboard() {
   return (
     <div className="bg-white">
-      <SubHeader title="Complaint Form" />
+      <SubHeader title="Service Request Form" />
       <main className="w-full">
         <Form />
       </main>

@@ -435,7 +435,7 @@ export default function ComplaintFormPage() {
                     {/* Heading + subheading (tuned for mobile) */}
                     <div className="text-center mb-6 sm:mb-8 px-2 mt-3 sm:mt-8">
                         <h1 className="text-lg sm:text-3xl lg:text-4xl font-semibold sm:font-bold text-[#1F487C] tracking-tight leading-snug sm:leading-tight">
-                            Complaint Form
+                            Service Request Form
                         </h1>
                         <p className="mt-2 sm:mt-3 text-gray-600 text-xs sm:text-base">
                             Let us know your issue and our team will get back to you shortly.
