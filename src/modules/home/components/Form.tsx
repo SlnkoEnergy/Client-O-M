@@ -434,7 +434,7 @@ export default function ComplaintFormPage() {
                 <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
                     {/* Heading + subheading (tuned for mobile) */}
                     <div className="text-center mb-6 sm:mb-8 px-2 mt-3 sm:mt-8">
-                        <h1 className="text-lg sm:text-3xl lg:text-4xl font-semibold sm:font-bold text-[#1F487C] tracking-tight leading-snug sm:leading-tight">
+                        <h1 className="text-lg sm:text-3xl lg:text-4xl font-semibold  text-[#1F487C] tracking-tight leading-snug sm:leading-tight">
                             Service Request Form
                         </h1>
                         <p className="mt-2 sm:mt-3 text-gray-600 text-xs sm:text-base">
