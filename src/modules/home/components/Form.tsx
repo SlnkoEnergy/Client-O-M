@@ -221,7 +221,7 @@ export default function ComplaintFormPage() {
             setProjectInfo({
                 sitePersonName: p.customer || "",
                 siteLocation: p.state || "",
-                siteAddress: p.site_address || p.siteAddress || "",
+                siteAddress: typeof (p.site_address) === "object" ? p.site_address?.district_name || "N/A" : p.site_address || "N/A",
             });
 
             // Load equipment after project is selected (so list feels contextual)
