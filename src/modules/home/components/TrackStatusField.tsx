@@ -205,11 +205,11 @@ export default function TrackStatusField() {
 
   /* ---------- compact card renderer for search results ---------- */
   const ResultsGrid = () => (
-    <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {ticketData.map((t, idx) => (
         <Card
           key={t._id || idx}
-          className="border border-slate-100 rounded-2xl hover:shadow-lg hover:-translate-y-0.5 transition-all cursor-pointer bg-white/90"
+          className="border rounded-2xl hover:shadow-lg hover:-translate-y-0.5 transition-all cursor-pointer"
           onClick={() => setSelectedIdx(idx)}
         >
           <CardContent className="p-4 space-y-3">
@@ -268,9 +268,9 @@ export default function TrackStatusField() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#e3f2ff] via-[#f5f8ff] to-white flex">
+    <div className="min-h-screen bg-gradient-to-b from-[#eef5ff] to-white flex">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <Card className="w-full max-w-4xl mx-auto shadow-xl border border-slate-100/80 rounded-3xl bg-white/90 backdrop-blur-sm">
+        <Card className="w-full max-w-4xl mx-auto shadow-lg border-0 rounded-2xl">
           <CardHeader className="px-4 sm:px-6 lg:px-8 pt-6 pb-4 border-b border-slate-100/80">
             <CardTitle className="text-xl sm:text-2xl font-semibold text-slate-900 flex items-center justify-between gap-3">
               <span>Track Your Service Ticket</span>
@@ -278,7 +278,7 @@ export default function TrackStatusField() {
                 Live Status
               </span>
             </CardTitle>
-            <p className="mt-1 text-xs sm:text-sm text-slate-500">
+            <p className="mt-1 text-xs sm:text-sm text-slate-500 ">
               Enter your ticket number or registered mobile number to view
               current status and activity.
             </p>
@@ -364,7 +364,7 @@ export default function TrackStatusField() {
 
                   <div
                     className="
-                      mt-1 w-full bg-slate-50/70 border border-slate-100 rounded-2xl p-4 sm:p-5 lg:p-6 text-left
+                      mt-1 w-full bg-gray-50 border rounded-2xl p-4 sm:p-5 lg:p-6 text-left
                       max-h-[70vh] overflow-y-auto
                       sm:max-h-none sm:overflow-visible
                     "
@@ -395,7 +395,7 @@ export default function TrackStatusField() {
                       </span>
                     </div>
 
-                    <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-sm bg-white/70 border border-slate-100 rounded-2xl p-4">
+                    <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-sm bg-white border border-slate-100 rounded-2xl p-4">
                       <p>
                         <span className="block text-[11px] uppercase tracking-wide text-slate-500">
                           Project
@@ -463,7 +463,7 @@ export default function TrackStatusField() {
                       </div>
 
                       {history.length === 0 ? (
-                        <p className="text-sm text-slate-600 bg-white/70 border border-dashed border-slate-200 rounded-2xl px-4 py-3">
+                        <p className="text-sm text-slate-600 bg-white border border-dashed border-slate-200 rounded-2xl px-4 py-3">
                           No status history available yet.
                         </p>
                       ) : (
@@ -473,7 +473,7 @@ export default function TrackStatusField() {
                               {/* dot */}
                               <span className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-sky-500 ring-4 ring-sky-100" />
                               {/* row */}
-                              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 bg-white/80 rounded-xl px-3 py-2">
+                              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 bg-white rounded-xl px-3 py-2">
                                 <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2">
                                   <span
                                     className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold text-white ${badgeClass(
@@ -525,7 +525,7 @@ export default function TrackStatusField() {
                         )}
                       </div>
 
-                      {/* Attachments cards (collapsible, now vertical on mobile) */}
+                      {/* Attachments cards (collapsible, vertical on mobile) */}
                       {showAttachments && combinedAttachments.length > 0 && (
                         <div className="mb-4 grid gap-4 sm:grid-cols-2">
                           {combinedAttachments.map((att) => (
@@ -612,8 +612,8 @@ export default function TrackStatusField() {
                             </div>
                           ))
                         ) : (
-                          <p className="text-xs sm:text-sm text-slate-500 bg-white/70 border border-dashed border-slate-200 rounded-2xl px-4 py-3">
-                            No activity yet. 
+                          <p className="text-xs sm:text-sm text-slate-500 bg-white border border-dashed border-slate-200 rounded-2xl px-4 py-3">
+                            No activity yet.
                           </p>
                         )}
                       </div>
